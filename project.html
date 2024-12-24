@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики и Нолики</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Крестики и Нолики</h1>
+
+        <form id="playerForm">
+            <input type="text" id="player1" class="form-control mb-3" placeholder="Имя Игрока 1 (X)" required>
+            <input type="text" id="player2" class="form-control mb-3" placeholder="Имя Игрока 2 (O)" required>
+            <button type="submit" class="btn btn-primary btn-block start-btn">Начать игру</button>
+        </form>
+
+        <div id="currentPlayer" class="alert alert-info d-none"></div>
+
+        <div id="scoreBoard" class="score-board d-none">
+            <h3 class="text-left">Счет:</h3>
+            <p id="player1Score">Игрок 1 (X): 0</p>
+            <p id="player2Score">Игрок 2 (O): 0</p>
+        </div>
+
+        <div id="gameBoard" class="game-board d-none"></div>
+
+        <div id="winnerDisplay" class="winner-display"></div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>

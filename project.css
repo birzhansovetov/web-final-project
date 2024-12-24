@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-control {
+  border-radius: 25px;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ffffff;
+}
+
+.start-btn {
+  background-color: #ffcc00;
+  border: none;
+  color: #333333;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+.start-btn:hover {
+  background-color: #e6b800;
+}
+
+.alert {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.score-board {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ffcc00; 
+}
+
+.score-board p {
+  margin: 5px 0;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.cell {
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cell.blue {
+  color: blue; /* Синий цвет для X */
+}
+
+.cell.red {
+  color: red; /* Красный цвет для O */
+}
+
+.cell:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+.cell.taken {
+  cursor: not-allowed;
+}
+
+.winner-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00; 
+  margin-top: 10px;
+}
